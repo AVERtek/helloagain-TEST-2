@@ -1,0 +1,18 @@
+#title: AVERtek # your name photo (or website title) here
+logo1: "images/HelloAgain_Logo-CMYK-4.png? raw=true" # your photo (or logo) here
+description: > # your text below (remove <br> elements if you don't need line breaks)
+  
+  <h3><b>HELLO AGAIN TEST DEMO</h3></b>
+  <h3><b>Engage ALL 4 Experiences</h3></b>
+  <br><br>
+  <b>ENVISION: 3D PRODUCT REVIEW</b>  Tour 3D Model Below
+  <br><br> 
+  <b>EXPLORE: 4D AUGMENTED REALITY</b>  AR Walking Tour on Mobile Device
+  <br><br>
+  <b>VIEW:</b><a href="https://avertek.net/xr-now-apartments" onclick="getOutboundLink('https://avertek.net/xr-now-apartments'); return false;"</b><b> LUXURY LIVING</b></a> 
+  <br><br>
+  <b>DISCOVER:</b><a href="https://avertek.net/special-bonus" onclick="getOutboundLink('https://avertek.net/special-bonus'); return false;"</b> <b> VIP TOUR & FREE GIFT</a> 
+  <br><br>
+theme: jekyll-theme-minimal
+# Google Analytics
+google_analytics: UA-000000000-0 
