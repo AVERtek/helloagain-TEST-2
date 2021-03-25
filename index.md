@@ -18,49 +18,36 @@
 
   <!-- OPTIONAL: Include prismatic.js for Magic Leap support -->
   <!--<script src="https://unpkg.com/@magicleap/prismatic/prismatic.min.js"></script>-->
-  <head>
-    <title>model-viewer audio sync</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <link rel="stylesheet" href="demo-styles.css" />
-<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
-    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
-    <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
-    <script src="https://unpkg.com/@magicleap/prismatic/prismatic.min.js"></script>
-    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
-  </head>
-  <body>
-    <script>
+ 
+  
+  <script>
       function Sync(selector, audioSelector) {
         var modelViewer = document.querySelector(selector);
         var sound = document.querySelector(audioSelector);
         var playRequest = document.querySelector("#overlay");
 
-        sound.addEventListener("timeupdate", () => {
+   sound.addEventListener("timeupdate", () => {
           modelViewer.currentTime = sound.currentTime;
           console.log("modelViewer time: " + modelViewer.currentTime);
         });
 
-        sound.addEventListener("pause", () => {
+   sound.addEventListener("pause", () => {
           modelViewer.pause();
         });
 
-        sound.addEventListener("play", () => {
+   sound.addEventListener("play", () => {
           modelViewer.play();
 
-          playRequest.classList.add("hide");
+   playRequest.classList.add("hide");
         });
 
-        document.addEventListener("visibilitychange", () => {
+   document.addEventListener("visibilitychange", () => {
           if (document.visibilityState !== "visible") {
             sound.pause();
           }
         });
 
-        var promise = sound.play();
+   var promise = sound.play();
         if (promise !== undefined) {
           promise
             .then(_ => {
@@ -72,45 +59,45 @@
               console.log("Autoplay has not worked");
 
               // show the modal dialogue to play this
-              playRequest.classList.remove("hide");
+   playRequest.classList.remove("hide");
             });
         }
 
         /*
         // this was needed because modelViewer.currentTime does not update when paused
         // https://github.com/google/model-viewer/issues/1113
-        function enforceTime() {
+   function enforceTime() {
           if (modelViewer === undefined)
             modelViewer = document.querySelector(selector);
 
-          if (sound.paused) modelViewer.currentTime = sound.currentTime;
+   if (sound.paused) modelViewer.currentTime = sound.currentTime;
 
           // need to enforce play
-          if (modelViewer.paused && typeof modelViewer.play === "function")
+   if (modelViewer.paused && typeof modelViewer.play === "function")
             modelViewer.play();
 
-          requestAnimationFrame(enforceTime);
+   requestAnimationFrame(enforceTime);
         }
 
         requestAnimationFrame(enforceTime);
         */
       }
 
-      function playNow() {
+   function playNow() {
         var playRequest = document.querySelector("#overlay");
         playRequest.classList.add("hide");
 
-        var sound = document.querySelector("#sound");
+   var sound = document.querySelector("#sound");
         sound.play();
       }
 
-      function jumpTo(time) {
+   function jumpTo(time) {
         var sound = document.querySelector("#sound");
         sound.currentTime = time;
       }
-    </script>
+   </script>
 
-    <div id="overlay" class="show">
+   <div id="overlay" class="show">
       <div id="request-press-play">
         <button onclick="playNow()">
           Start Audio Playback<br />(needs user interaction)
@@ -143,7 +130,7 @@
         </div>
       </section>
 
-      <script>
+   <script>
         window.addEventListener("load", () => {
           Sync("#model-viewer", "#sound");
         });
