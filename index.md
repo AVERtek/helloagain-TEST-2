@@ -58,7 +58,7 @@
               // Show a "Play" button so that user can start playback.
               console.log("Autoplay has not worked");
 
-              // show the modal dialogue to play this
+   // show the modal dialogue to play this
    playRequest.classList.remove("hide");
             });
         }
