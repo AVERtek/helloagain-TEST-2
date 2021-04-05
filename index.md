@@ -98,7 +98,7 @@
    </script>
 
    
-<model-viewer camera-controls camera-orbit="180deg 90deg 100%" autoplay animation-name="" id="reveal" id="model-viewer" loading="eager" src="Models/Hello Again_Exerpience_05.glb?sound=Sound/Hello Again_Test_with background music 5.wav" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="Models/HelloAgain.reality" alt="helloagain TEST 2" auto-rotate-delay="0" ar-scale="auto" camera-controls="" style="width: 100%; height: 500px" exposure="0.20"> <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1 px solid black; position: absolute; top: 20px; right: 20px; "> 👋 AR Click Here </button>
+<model-viewer camera-controls camera-orbit="0deg 90deg 100%" autoplay animation-name="" id="reveal" id="model-viewer" loading="eager" src="Models/Hello Again_Exerpience_05.glb?sound=Sound/Hello Again_Test_with background music 5.wav" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="Models/HelloAgain.reality" alt="helloagain TEST 2" auto-rotate-delay="0" ar-scale="auto" camera-controls="" style="width: 100%; height: 500px" exposure="0.20"> <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1 px solid black; position: absolute; top: 20px; right: 20px; "> 👋 AR Click Here </button>
 </model-viewer>
 
 <section class="attribution">
