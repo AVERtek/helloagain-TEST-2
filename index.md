@@ -58,28 +58,28 @@
               // Show a "Play" button so that user can start playback.
               console.log("Autoplay has not worked");
 
-              // show the modal dialogue to play this
+   // show the modal dialogue to play this
    playRequest.classList.remove("hide");
             });
         }
 
-        /*
+   /*
         // this was needed because modelViewer.currentTime does not update when paused
         // https://github.com/google/model-viewer/issues/1113
           function enforceTime() {
             if (modelViewer === undefined)
             modelViewer = document.querySelector(selector);
 
-         if (sound.paused) modelViewer.currentTime = sound.currentTime;
+   if (sound.paused) modelViewer.currentTime = sound.currentTime;
 
-          // need to enforce play
+   // need to enforce play
            if (modelViewer.paused && typeof modelViewer.play === "function")
               modelViewer.play();
 
-       requestAnimationFrame(enforceTime);
+   requestAnimationFrame(enforceTime);
            }
 
-         requestAnimationFrame(enforceTime);
+   requestAnimationFrame(enforceTime);
         */
          }
 
@@ -98,7 +98,7 @@
    </script>
 
    
-<model-viewer camera-controls camera-orbit="0deg 90deg 100%" autoplay animation-name="" id="reveal" id="model-viewer" loading="eager" src="Models/Hello Again_Experience_05.glb?sound=Sound/Hello Again_Test_with background music 5.wav" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="Models/HelloAgain.reality" alt="helloagain TEST 2" auto-rotate-delay="0" ar-scale="auto" camera-controls="" style="width: 100%; height: 500px" exposure="0.20"> <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1 px solid black; position: absolute; top: 20px; right: 20px; "> 👋 AR Click Here </button>
+<model-viewer camera-controls camera-orbit="0deg 90deg 100%" autoplay animation-name="" id="reveal" id="model-viewer" loading="eager" src="Models/Hello Again_Exerpience_05.glb?sound=Sound/Hello Again_Experience_05.mp4" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="Models/HelloAgain.reality" alt="helloagain TEST 2" auto-rotate-delay="0" ar-scale="auto" camera-controls="" style="width: 100%; height: 500px" exposure="0.20"> <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1 px solid black; position: absolute; top: 20px; right: 20px; "> 👋 AR Click Here </button>
 </model-viewer>
 
 <section class="attribution">
@@ -107,7 +107,7 @@
             <h1>Hello Again</h1>
             <span>
               <audio controls autoplay loop id="sound">
-                <source src="Sound/Hello Again_Test_with background music 5.wav"/>
+                <source src="Sound/Hello Again_Experience_05.mp4"/>
               </audio
             ></span>
           </span>
