@@ -1,7 +1,7 @@
 #title: AVERtek # your name photo (or website title) here
 logo1: "images/HelloAgain_Logo-CMYK-4.png? raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  <h3 class="redtext"><b>helloagain TEST 2 DEMO</h3></b>
+  <h3 style="color:#6B82FF;"><b>helloagain TEST 2 DEMO</h3></b>
   <h3><b>Engage ALL 4 Experiences</h3></b>
   <br><br>
   <b>ENVISION: 3D PRODUCT REVIEW</b>  Tour 3D Model Below
