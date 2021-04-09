@@ -3,7 +3,7 @@ logo1: "images/HelloAgain_Logo-CMYK-4.png? raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   <style>
 .redtext {
-	color: pms 2718 c;
+	color:pms 2718 c;
 }
 </style>
   <h3 class="redtext"><b>helloagain TEST 2 DEMO</h3></b>
