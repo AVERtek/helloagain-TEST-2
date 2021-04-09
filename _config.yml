@@ -1,11 +1,6 @@
 #title: AVERtek # your name photo (or website title) here
 logo1: "images/HelloAgain_Logo-CMYK-4.png? raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  <style>
-.redtext {
-	"color:#6882FF";
-}
-</style>
   <h3 class="redtext"><b>helloagain TEST 2 DEMO</h3></b>
   <h3><b>Engage ALL 4 Experiences</h3></b>
   <br><br>
